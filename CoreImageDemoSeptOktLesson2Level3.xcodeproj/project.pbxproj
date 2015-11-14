@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FA08F381BF74CF7002A9A81 /* FaceDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA08F371BF74CF7002A9A81 /* FaceDetectionViewController.m */; };
 		4FC10DF41BF668DE0020A7FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC10DF31BF668DE0020A7FF /* main.m */; };
 		4FC10DF71BF668DE0020A7FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC10DF61BF668DE0020A7FF /* AppDelegate.m */; };
 		4FC10DFD1BF668DE0020A7FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC10DFB1BF668DE0020A7FF /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FA08F361BF74CF7002A9A81 /* FaceDetectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetectionViewController.h; sourceTree = "<group>"; };
+		4FA08F371BF74CF7002A9A81 /* FaceDetectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetectionViewController.m; sourceTree = "<group>"; };
 		4FC10DEF1BF668DE0020A7FF /* CoreImageDemoSeptOktLesson2Level3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreImageDemoSeptOktLesson2Level3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC10DF31BF668DE0020A7FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4FC10DF51BF668DE0020A7FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 			children = (
 				4FC10E091BF66A2C0020A7FF /* FilterPhotoViewController.h */,
 				4FC10E0A1BF66A2C0020A7FF /* FilterPhotoViewController.m */,
+				4FA08F361BF74CF7002A9A81 /* FaceDetectionViewController.h */,
+				4FA08F371BF74CF7002A9A81 /* FaceDetectionViewController.m */,
 				4FC10DF51BF668DE0020A7FF /* AppDelegate.h */,
 				4FC10DF61BF668DE0020A7FF /* AppDelegate.m */,
 				4FC10DFB1BF668DE0020A7FF /* Main.storyboard */,
@@ -229,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA08F381BF74CF7002A9A81 /* FaceDetectionViewController.m in Sources */,
 				4FC10DF71BF668DE0020A7FF /* AppDelegate.m in Sources */,
 				4FC10E0B1BF66A2C0020A7FF /* FilterPhotoViewController.m in Sources */,
 				4FC10DF41BF668DE0020A7FF /* main.m in Sources */,

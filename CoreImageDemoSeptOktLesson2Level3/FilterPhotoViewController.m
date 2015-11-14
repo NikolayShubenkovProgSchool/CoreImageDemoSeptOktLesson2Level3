@@ -87,7 +87,6 @@
         if (!image){
             image = [imageInfoDict valueForKey:UIImagePickerControllerOriginalImage];
         }
-        
         if (image){
             self.image = image;
             [self setup];
