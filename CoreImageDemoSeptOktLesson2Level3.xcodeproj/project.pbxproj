@@ -14,6 +14,7 @@
 		4FC10E021BF668DE0020A7FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC10E001BF668DE0020A7FF /* LaunchScreen.storyboard */; };
 		4FC10E0B1BF66A2C0020A7FF /* FilterPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC10E0A1BF66A2C0020A7FF /* FilterPhotoViewController.m */; };
 		4FC10E0E1BF6F63B0020A7FF /* CIFilter+SpExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC10E0D1BF6F63B0020A7FF /* CIFilter+SpExtention.m */; };
+		6907C2F71BF74CF400310223 /* FaceDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907C2F61BF74CF400310223 /* FaceDetectionViewController.m */; };
 		BC46C56CB84C180EA67B3067 /* libPods-CoreImageDemoSeptOktLesson2Level3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5725CA8D46A6B5AE72672B4F /* libPods-CoreImageDemoSeptOktLesson2Level3.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,8 @@
 		4FC10E0C1BF6F63B0020A7FF /* CIFilter+SpExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CIFilter+SpExtention.h"; sourceTree = "<group>"; };
 		4FC10E0D1BF6F63B0020A7FF /* CIFilter+SpExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CIFilter+SpExtention.m"; sourceTree = "<group>"; };
 		5725CA8D46A6B5AE72672B4F /* libPods-CoreImageDemoSeptOktLesson2Level3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreImageDemoSeptOktLesson2Level3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6907C2F51BF74CF400310223 /* FaceDetectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetectionViewController.h; sourceTree = "<group>"; };
+		6907C2F61BF74CF400310223 /* FaceDetectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetectionViewController.m; sourceTree = "<group>"; };
 		D0F8A90A4D5EFA0877EF88C8 /* Pods-CoreImageDemoSeptOktLesson2Level3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreImageDemoSeptOktLesson2Level3.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreImageDemoSeptOktLesson2Level3/Pods-CoreImageDemoSeptOktLesson2Level3.release.xcconfig"; sourceTree = "<group>"; };
 		FBD245411B10D2315F96F220 /* Pods-CoreImageDemoSeptOktLesson2Level3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreImageDemoSeptOktLesson2Level3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreImageDemoSeptOktLesson2Level3/Pods-CoreImageDemoSeptOktLesson2Level3.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +76,8 @@
 				4FC10DF51BF668DE0020A7FF /* AppDelegate.h */,
 				4FC10DF61BF668DE0020A7FF /* AppDelegate.m */,
 				4FC10DFB1BF668DE0020A7FF /* Main.storyboard */,
+				6907C2F51BF74CF400310223 /* FaceDetectionViewController.h */,
+				6907C2F61BF74CF400310223 /* FaceDetectionViewController.m */,
 				4FC10E0C1BF6F63B0020A7FF /* CIFilter+SpExtention.h */,
 				4FC10E0D1BF6F63B0020A7FF /* CIFilter+SpExtention.m */,
 				4FC10DFE1BF668DE0020A7FF /* Assets.xcassets */,
@@ -213,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6907C2F71BF74CF400310223 /* FaceDetectionViewController.m in Sources */,
 				4FC10DF71BF668DE0020A7FF /* AppDelegate.m in Sources */,
 				4FC10E0B1BF66A2C0020A7FF /* FilterPhotoViewController.m in Sources */,
 				4FC10DF41BF668DE0020A7FF /* main.m in Sources */,

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C40a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cuf-SW-oKE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C40a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ldf-s2-JQS">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Filter Photo View Controller-->
+        <!--Item-->
         <scene sceneID="D9N-J2-d7K">
             <objects>
                 <viewController id="cuf-SW-oKE" customClass="FilterPhotoViewController" sceneMemberID="viewController">
@@ -18,44 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="icx-aA-41w" userLabel="Original Image View">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="icx-aA-41w" userLabel="Original Image View">
                                 <rect key="frame" x="16" y="20" width="288" height="201"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="0Ug-uR-oiN" userLabel="Filtered">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ug-uR-oiN" userLabel="Filtered">
                                 <rect key="frame" x="16" y="229" width="288" height="201"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuE-Nw-zTp">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuE-Nw-zTp">
                                 <rect key="frame" x="16" y="530" width="100" height="30"/>
                                 <state key="normal" title="Выбрать фото"/>
                                 <connections>
                                     <action selector="selectPhotoPressed:" destination="cuf-SW-oKE" eventType="touchUpInside" id="VA7-tg-4OM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="currentValue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3q-Pd-UGd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="currentValue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3q-Pd-UGd">
                                 <rect key="frame" x="111" y="438" width="98" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FY1-65-R5N">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FY1-65-R5N">
                                 <rect key="frame" x="272" y="438" width="32" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQi-tK-PlD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQi-tK-PlD">
                                 <rect key="frame" x="16" y="438" width="28" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1xg-Pq-Inh">
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1xg-Pq-Inh">
                                 <rect key="frame" x="14" y="468" width="292" height="31"/>
                                 <connections>
                                     <action selector="filterValueChanged:" destination="cuf-SW-oKE" eventType="valueChanged" id="vIN-8l-unw"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYn-as-VmG">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYn-as-VmG">
                                 <rect key="frame" x="214" y="530" width="94" height="30"/>
                                 <state key="normal" title="CascadeFilter"/>
                                 <connections>
@@ -63,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lER-vC-s1O">
-                                <rect key="frame" x="137" y="530" width="46" height="30"/>
+                                <rect key="frame" x="143" y="530" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="saveCameraPressed:" destination="cuf-SW-oKE" eventType="touchUpInside" id="wNM-vU-zug"/>
@@ -77,8 +77,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="1xg-Pq-Inh" secondAttribute="trailing" id="7aw-GG-x4T"/>
                             <constraint firstItem="1xg-Pq-Inh" firstAttribute="top" secondItem="Q3q-Pd-UGd" secondAttribute="bottom" constant="9" id="8iD-lj-agg"/>
                             <constraint firstAttribute="leadingMargin" secondItem="PuE-Nw-zTp" secondAttribute="leading" id="8tL-ba-tfO"/>
-                            <constraint firstItem="lER-vC-s1O" firstAttribute="leading" secondItem="PuE-Nw-zTp" secondAttribute="trailing" constant="21" id="9RE-nl-UOb"/>
                             <constraint firstItem="0Ug-uR-oiN" firstAttribute="width" secondItem="icx-aA-41w" secondAttribute="width" id="9Uk-T2-ZCg"/>
+                            <constraint firstItem="lER-vC-s1O" firstAttribute="centerX" secondItem="9Gr-TN-iEh" secondAttribute="centerX" id="CEu-3w-Ain"/>
                             <constraint firstItem="PuE-Nw-zTp" firstAttribute="top" secondItem="1xg-Pq-Inh" secondAttribute="bottom" constant="32" id="EmQ-HB-lI2"/>
                             <constraint firstItem="0Ug-uR-oiN" firstAttribute="height" secondItem="icx-aA-41w" secondAttribute="height" id="JiL-tr-AjD"/>
                             <constraint firstItem="6Qr-RA-Z8k" firstAttribute="top" secondItem="oYn-as-VmG" secondAttribute="bottom" constant="8" id="LyK-Ct-cq0"/>
@@ -98,6 +98,7 @@
                             <constraint firstItem="Q3q-Pd-UGd" firstAttribute="centerX" secondItem="9Gr-TN-iEh" secondAttribute="centerX" id="z0a-rV-3oB"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ZHK-8d-wRd"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="filterValue" destination="Q3q-Pd-UGd" id="C2W-2N-KCA"/>
@@ -110,7 +111,74 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OT0-4y-cgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="42" y="8"/>
+            <point key="canvasLocation" x="1235" y="713"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Bbh-Lm-EDR">
+            <objects>
+                <viewController id="MBR-T0-K0C" customClass="FaceDetectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TCT-df-f9U"/>
+                        <viewControllerLayoutGuide type="bottom" id="ezg-Wr-ecC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0cB-Za-ZmU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zls-WC-bW5">
+                                <rect key="frame" x="16" y="20" width="288" height="436"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iB-vS-eAh">
+                                <rect key="frame" x="16" y="481" width="63" height="30"/>
+                                <state key="normal" title="Find face"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stL-L5-a5Z">
+                                <rect key="frame" x="187" y="481" width="117" height="30"/>
+                                <state key="normal" title="LoadFromGallery"/>
+                                <connections>
+                                    <action selector="selectPhotoPressed:" destination="MBR-T0-K0C" eventType="touchUpInside" id="IQG-rN-WUL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8iB-vS-eAh" firstAttribute="top" secondItem="zls-WC-bW5" secondAttribute="bottom" constant="25" id="BWw-Va-32M"/>
+                            <constraint firstItem="stL-L5-a5Z" firstAttribute="trailing" secondItem="0cB-Za-ZmU" secondAttribute="trailingMargin" id="Cja-J1-BeL"/>
+                            <constraint firstItem="zls-WC-bW5" firstAttribute="leading" secondItem="0cB-Za-ZmU" secondAttribute="leadingMargin" id="R80-VI-6z8"/>
+                            <constraint firstItem="ezg-Wr-ecC" firstAttribute="top" secondItem="stL-L5-a5Z" secondAttribute="bottom" constant="8" id="a18-9l-HnL"/>
+                            <constraint firstItem="zls-WC-bW5" firstAttribute="top" secondItem="TCT-df-f9U" secondAttribute="bottom" id="f7h-KR-fGD"/>
+                            <constraint firstItem="ezg-Wr-ecC" firstAttribute="top" secondItem="8iB-vS-eAh" secondAttribute="bottom" constant="8" id="gOR-ot-Yzy"/>
+                            <constraint firstItem="8iB-vS-eAh" firstAttribute="leading" secondItem="0cB-Za-ZmU" secondAttribute="leadingMargin" id="iXJ-3b-C1W"/>
+                            <constraint firstItem="zls-WC-bW5" firstAttribute="trailing" secondItem="0cB-Za-ZmU" secondAttribute="trailingMargin" id="lhX-Qw-LFQ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="BKz-sP-l6b"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="zls-WC-bW5" id="F5y-U3-vA8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dKO-T9-iKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1250" y="0.0"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="TG4-uX-99y">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ldf-s2-JQS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="6uS-9I-n70">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MBR-T0-K0C" kind="relationship" relationship="viewControllers" id="J0y-jp-0Fg"/>
+                        <segue destination="cuf-SW-oKE" kind="relationship" relationship="viewControllers" id="gY9-af-2x7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wnq-xG-5Y8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="492" y="356"/>
         </scene>
     </scenes>
 </document>
