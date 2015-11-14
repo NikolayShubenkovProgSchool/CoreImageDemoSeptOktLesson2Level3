@@ -56,19 +56,28 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYn-as-VmG">
-                                <rect key="frame" x="222" y="530" width="86" height="30"/>
-                                <state key="normal" title="CscadeFilter"/>
+                                <rect key="frame" x="214" y="530" width="94" height="30"/>
+                                <state key="normal" title="CascadeFilter"/>
                                 <connections>
                                     <action selector="showComlexFilter:" destination="cuf-SW-oKE" eventType="touchUpInside" id="u21-Qu-5cy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lER-vC-s1O">
+                                <rect key="frame" x="137" y="530" width="46" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveCameraPressed:" destination="cuf-SW-oKE" eventType="touchUpInside" id="wNM-vU-zug"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="SQi-tK-PlD" secondAttribute="leading" id="1wC-K3-mn9"/>
+                            <constraint firstItem="6Qr-RA-Z8k" firstAttribute="top" secondItem="lER-vC-s1O" secondAttribute="bottom" constant="8" id="3YY-3I-znZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1xg-Pq-Inh" secondAttribute="trailing" id="7aw-GG-x4T"/>
                             <constraint firstItem="1xg-Pq-Inh" firstAttribute="top" secondItem="Q3q-Pd-UGd" secondAttribute="bottom" constant="9" id="8iD-lj-agg"/>
                             <constraint firstAttribute="leadingMargin" secondItem="PuE-Nw-zTp" secondAttribute="leading" id="8tL-ba-tfO"/>
+                            <constraint firstItem="lER-vC-s1O" firstAttribute="leading" secondItem="PuE-Nw-zTp" secondAttribute="trailing" constant="21" id="9RE-nl-UOb"/>
                             <constraint firstItem="0Ug-uR-oiN" firstAttribute="width" secondItem="icx-aA-41w" secondAttribute="width" id="9Uk-T2-ZCg"/>
                             <constraint firstItem="PuE-Nw-zTp" firstAttribute="top" secondItem="1xg-Pq-Inh" secondAttribute="bottom" constant="32" id="EmQ-HB-lI2"/>
                             <constraint firstItem="0Ug-uR-oiN" firstAttribute="height" secondItem="icx-aA-41w" secondAttribute="height" id="JiL-tr-AjD"/>

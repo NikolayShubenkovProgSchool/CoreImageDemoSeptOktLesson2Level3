@@ -7,6 +7,9 @@
 //
 
 #import "FilterPhotoViewController.h"
+
+@import AssetsLibrary;
+
 #import <CZPhotoPickerController/CZPhotoPickerController.h>
 #import "CIFilter+SpExtention.h"
 
@@ -77,6 +80,19 @@
 }
 
 #pragma mark - UI Events
+- (IBAction)saveCameraPressed:(id)sender {
+    
+    UIImage *image = self.filteredImageView.image;
+    ALAssetsLibrary *library = [ALAssetsLibrary new];
+    [library writeImageToSavedPhotosAlbum:image.CGImage
+                              orientation:self.image.imageOrientation
+                          completionBlock:^(NSURL *assetURL, NSError *error) {
+                              if (error) {
+                                  NSLog(@"Warning. Did not save to gallery");
+                              }
+                          }];
+    
+}
 
 - (IBAction)selectPhotoPressed:(id)sender {
     
