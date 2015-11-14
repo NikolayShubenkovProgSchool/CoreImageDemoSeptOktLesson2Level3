@@ -8,6 +8,8 @@
 
 #import "FilterPhotoViewController.h"
 
+@import AssetsLibrary;
+
 #import <CZPhotoPickerController/CZPhotoPickerController.h>
 
 #import "CIFilter+SpExtention.h"
@@ -137,6 +139,19 @@
     CGImageRelease(resultRef);
 }
 
+- (IBAction)saveToCameraPressed:(UIButton *)sender {
+    
+    UIImage *image = self.filteredImageView.image;
+    ALAssetsLibrary *library = [ALAssetsLibrary new];
+    [library writeImageToSavedPhotosAlbum:image.CGImage
+                              orientation:self.image.imageOrientation
+                          completionBlock:^(NSURL *assetURL, NSError *error) {
+                              if (error){
+                                  NSLog(@"WArning. Did not save to gallery");
+                              }
+                          }];
+    
+}
 
 - (IBAction)filterValueChanged:(UISlider *)sender {
     [self filterImage:@( sender.value )];
