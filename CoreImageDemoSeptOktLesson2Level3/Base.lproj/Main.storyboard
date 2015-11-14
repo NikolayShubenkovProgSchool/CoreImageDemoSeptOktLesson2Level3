@@ -131,6 +131,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iB-vS-eAh">
                                 <rect key="frame" x="16" y="481" width="63" height="30"/>
                                 <state key="normal" title="Find face"/>
+                                <connections>
+                                    <action selector="showFacePressed:" destination="MBR-T0-K0C" eventType="touchUpInside" id="4GX-0u-p5x"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stL-L5-a5Z">
                                 <rect key="frame" x="187" y="481" width="117" height="30"/>
