@@ -26,6 +26,9 @@
                                 <rect key="frame" x="16" y="393" width="119" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Лицо, покажись!"/>
+                                <connections>
+                                    <action selector="showFacePressed:" destination="BiQ-qS-5xn" eventType="touchUpInside" id="Ucl-f4-AMc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqn-bg-MZ2">
                                 <rect key="frame" x="210" y="393" width="100" height="30"/>
