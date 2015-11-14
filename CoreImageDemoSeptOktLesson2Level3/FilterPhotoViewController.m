@@ -36,10 +36,10 @@
     self.originalImageView.image = image;
     self.image = image;
     
-    [self filterImage];
+    [self filterImage:@0.8];
 }
 
-- (void)filterImage {
+- (void)filterImage:(id)value {
     //Создадим картинку для фильтрации
     CIImage *imageToFilter = [CIImage imageWithCGImage:self.image.CGImage];
     
@@ -50,7 +50,7 @@
     //Надеюсь,
     NSParameterAssert(filter);
     
-    [filter setValue:@0.8 forKey:@"inputIntensity"];
+    [filter setValue:value forKey:@"inputIntensity"];
     
     
     CIImage *result = [filter outputImage];
@@ -64,8 +64,10 @@
     
 }
 
-- (IBAction)filterValueChanged:(id)sender {
-    
+- (IBAction)filterValueChanged:(UISlider *)sender {
+    [self filterImage:@( sender.value )];
 }
+
+
 
 @end

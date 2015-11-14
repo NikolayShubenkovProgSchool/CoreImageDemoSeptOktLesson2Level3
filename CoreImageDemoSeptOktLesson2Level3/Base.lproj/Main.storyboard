@@ -18,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="icx-aA-41w" userLabel="Original Image View">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="icx-aA-41w" userLabel="Original Image View">
                                 <rect key="frame" x="16" y="20" width="288" height="157"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Ug-uR-oiN" userLabel="Filtered">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="0Ug-uR-oiN" userLabel="Filtered">
                                 <rect key="frame" x="16" y="185" width="288" height="157"/>
                                 <animations/>
                             </imageView>
@@ -34,13 +34,6 @@
                                     <action selector="selectPhotoPressed:" destination="cuf-SW-oKE" eventType="touchUpInside" id="VA7-tg-4OM"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1xg-Pq-Inh">
-                                <rect key="frame" x="14" y="380" width="292" height="31"/>
-                                <animations/>
-                                <connections>
-                                    <action selector="filterValueChanged:" destination="cuf-SW-oKE" eventType="valueChanged" id="vIN-8l-unw"/>
-                                </connections>
-                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="currentValue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3q-Pd-UGd">
                                 <rect key="frame" x="111" y="350" width="98" height="21"/>
                                 <animations/>
@@ -62,6 +55,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.40000000000000002" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1xg-Pq-Inh">
+                                <rect key="frame" x="14" y="380" width="292" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="filterValueChanged:" destination="cuf-SW-oKE" eventType="valueChanged" id="vIN-8l-unw"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
