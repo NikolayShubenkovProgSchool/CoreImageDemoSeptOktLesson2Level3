@@ -48,7 +48,7 @@
     
     NSParameterAssert(filter);
     
-    [filter setValue:@"0.8" forKey:@"inputIntensity"];
+    [filter setValue:@0.8 forKey:@"inputIntensity"];
     
     CIImage *result = [filter outputImage];
     
@@ -66,5 +66,8 @@
 - (IBAction)filterValueChanged:(id)sender {
     
 }
+
+
+
 
 @end
