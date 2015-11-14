@@ -18,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="icx-aA-41w" userLabel="Original Image View">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="icx-aA-41w" userLabel="Original Image View">
                                 <rect key="frame" x="16" y="20" width="288" height="157"/>
                                 <animations/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="0Ug-uR-oiN" userLabel="Filtered">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="0Ug-uR-oiN" userLabel="Filtered">
                                 <rect key="frame" x="16" y="185" width="288" height="157"/>
                                 <animations/>
                             </imageView>
@@ -62,11 +62,20 @@
                                     <action selector="filterValueChanged:" destination="cuf-SW-oKE" eventType="valueChanged" id="vIN-8l-unw"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2g-vH-QQZ">
+                                <rect key="frame" x="214" y="430" width="94" height="30"/>
+                                <animations/>
+                                <state key="normal" title="CascadeFilter"/>
+                                <connections>
+                                    <action selector="showComplexFilter:" destination="cuf-SW-oKE" eventType="touchUpInside" id="zyo-uf-W1y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="SQi-tK-PlD" secondAttribute="leading" id="1wC-K3-mn9"/>
+                            <constraint firstItem="6Qr-RA-Z8k" firstAttribute="top" secondItem="T2g-vH-QQZ" secondAttribute="bottom" constant="20" id="4GB-xe-MCG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1xg-Pq-Inh" secondAttribute="trailing" id="7aw-GG-x4T"/>
                             <constraint firstItem="1xg-Pq-Inh" firstAttribute="top" secondItem="Q3q-Pd-UGd" secondAttribute="bottom" constant="9" id="8iD-lj-agg"/>
                             <constraint firstAttribute="leadingMargin" secondItem="PuE-Nw-zTp" secondAttribute="leading" id="8tL-ba-tfO"/>
@@ -74,6 +83,7 @@
                             <constraint firstItem="PuE-Nw-zTp" firstAttribute="top" secondItem="1xg-Pq-Inh" secondAttribute="bottom" constant="32" id="EmQ-HB-lI2"/>
                             <constraint firstItem="0Ug-uR-oiN" firstAttribute="height" secondItem="icx-aA-41w" secondAttribute="height" id="JiL-tr-AjD"/>
                             <constraint firstItem="Q3q-Pd-UGd" firstAttribute="top" secondItem="0Ug-uR-oiN" secondAttribute="bottom" constant="8" id="Oqq-FD-oqa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T2g-vH-QQZ" secondAttribute="trailing" constant="-4" id="Rbq-Xy-aAU"/>
                             <constraint firstAttribute="leadingMargin" secondItem="icx-aA-41w" secondAttribute="leading" id="T6i-hU-TaO"/>
                             <constraint firstItem="0Ug-uR-oiN" firstAttribute="trailing" secondItem="icx-aA-41w" secondAttribute="trailing" id="WHn-Iu-UKD"/>
                             <constraint firstItem="Q3q-Pd-UGd" firstAttribute="centerY" secondItem="SQi-tK-PlD" secondAttribute="centerY" id="YSa-n9-MOp"/>
