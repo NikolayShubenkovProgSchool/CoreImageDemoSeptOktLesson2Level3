@@ -25,12 +25,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setup];
 }
 
 #pragma mark - Setup
 
+- (void)setup {
+    UIImage *image = [UIImage imageNamed:@"HDtimelapse.net_City_1150_hirez"];
+    self.originalImageView.image = image;
+    self.image = image;
+    
+    [self filterImage];
+}
 
+- (void)filterImage {
+    //Создадим картинку для фильтрации
+    CIImage *imageToFilter = [CIImage imageWithCGImage:self.image.CGImage];
+    
+    //Создадим фильтр
+    CIFilter *filter = [CIFilter filterWithName:@"CISepiaTone"];
+    //Дадим на вход изображение
+    [filter setValue:imageToFilter forKey:kCIInputImageKey];
+    //Надеюсь,
+    NSParameterAssert(filter);
+    
+    [filter setValue:@0.8 forKey:@"inputIntensity"];
+    
+    
+    CIImage *result = [filter outputImage];
+    
+    self.filteredImageView.image = [UIImage imageWithCIImage:result];
+}
 
 #pragma mark - UI Events
 
